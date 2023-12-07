@@ -37,10 +37,10 @@ int main(){
 
     try{
         double r = division (n1, n2);
-        printf("%g  %c  %g  =   %g \n", n1, 246, n2, r);         // " %g " imprime un número double o float usando la notación que requiera menor espacio
+        printf("%g  %c  %g  =   %g \n", n1, 246, n2, r);         // " %g " prints a double or float number using the notation that requires the least space
     }
     catch (const runtime_error& e) {
-        cerr<<"ERROR: "<< e.what();                              //Muestra la excepcion de runtime_error arrojada si el denominador es igual a  0
+        cerr<<"ERROR: "<< e.what();                              // Show runtime_error exception thrown if denominator equals 0
     }
     cout<<endl<<"End of program.";
     return 0;
